@@ -23,6 +23,11 @@ pipeline {
             sh 'echo \'Testing Edge\''
           }
         }
+        stage('Testing Safari') {
+          steps {
+            echo 'Testing on Safari'
+          }
+        }
       }
     }
     stage('Deploy') {
